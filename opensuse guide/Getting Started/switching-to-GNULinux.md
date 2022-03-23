@@ -20,7 +20,7 @@
   尝试新的东西 - 仅仅尝试新的和不同的东西本身就可以激励许多人。
 - 并且......颇具乐趣!
 
-![hardware](../assets/Getting Started/hardware.gif)
+![hardware](<../assets/Getting Started/hardware.gif>)
 
 ## 2.2 切换到 GNU/Linux 的挑战
 
