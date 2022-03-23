@@ -41,7 +41,7 @@
 
 ### 2.3.1 可运行于 Microsoft Windows 以及 Mac OS 上的开源应用程序*
 
-注：该列表与原文或略有出入，排版顺序以及部分列表来自于 [List of applications（简体中文）](https://wiki.archlinux.org/title/List_of_applications_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))，尽管如此，列表中仍尽量仅包含开源软件。一下绝大部分应用程序可不借助其他方式运行于 Microsoft Windows 甚至 Mac OS 上。
+注：该列表与原文或略有出入，排版顺序以及部分列表来自于 [List of applications（简体中文）](https://wiki.archlinux.org/title/List_of_applications_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))，尽管如此，列表中仍尽量仅包含开源软件。以下绝大部分应用程序可不借助其他方式运行于 Microsoft Windows 甚至 Mac OS 上。
 
 #### 文本编辑
 ##### 文本编辑器
