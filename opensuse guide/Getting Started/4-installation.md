@@ -39,19 +39,75 @@
 
 ## 4.2 安装流程
 
+准备就绪后，插入 DVD 或 U盘并重新启动计算机。
+
 ### 开始安装
 
-### 语言、键盘、权力许可
+您将会看到一个启动菜单，在这里您可以选择直接安装或升级系统，也可以进入救援系统或调整其他选项，然后开始安装。
 
-### 用户环境
+![image](<../assets/Getting Started/grub2.png>)
 
-### 分区
+### 语言、键盘、许可协议
+
+许可协议用于告知您您的权利，进行下一步默认您遵守该许可协议。请注意：
+
+- **该许可受到美国出口管制条例（EAR）限制**
+- 点击下一步默认您接受该许可
+- 被限制使用的实体或个人不被允许拥有许可约定的权利
+
+有关 openSUSE 许可文本，参见：https://en.opensuse.org/openSUSE:License ，
+
+有关 SUSE 许可文本，参见：https://www.suse.com/company/legal/eccn/ 。
+
+![image-20220323222137127](<../assets/Getting Started/language-keyboard-license.png>)
+
+### 系统角色
+
+GNU/Linux 存在各种不同的图形用户界面（桌面环境）。相当一部分的 openSUSE 用户更喜欢使用 KDE Plasma ，这也将是本指南的重点。但您也可以选择 GNOME 桌面或基于文本的服务器安装等选项。
+
+![image-20220323222342957](<../assets/Getting Started/user-interface.png>)
+
+### 分区建议
+
+默认情况下，openSUSE 会建议为系统文件创建多个 BTRFS 子卷，一般为 `/boot/efi` 用于安放启动文件，`/` 用于安放系统文件，`/home` 用于安放用户文件以及 `swap` 作为物理内存的补充部分，类似于 Microsoft Windows 的页面文件。
+
+请仔细检查分区建议是否是您想要的，如果您正在进行双系统安装，请特别注意这点，以确保一切都符合要求。
+
+请注意，GNU/Linux 使用以下方案标记磁盘/分区:
+
+- 对于 SATA 设备：*sda1* 是第一块磁盘上的第一个分区，*sdb3* 是第二块磁盘上的第三个分区，依此类推。
+- 对于 NVME m.2 设备：nvme0p1 是第一块硬盘的第一个分区，nvme1p3 是第二块磁盘上的第三个分区，依此类推。
+
+将被格式化的分区以红色文本书写。
+
+![image-20220323222455310](<../assets/Getting Started/partition.png>)
 
 ### 时钟和时区
 
-### 创建新用户
+在这里设置时区。
+
+如果您只有 GNU/Linux，建议将硬件时钟设置为 UTC，如果您使用 Microsoft Windows 进行多系统引导，请将其设置为本地时间。
+
+![image-20220323222622958](<../assets/Getting Started/time-and-timezone.png>)
+
+### 创建本地用户
+
+现在是时候创建您的用户了。请注意，默认情况下，root 用户（管理员）密码与普通用户的密码相同。
+
+如果您想增加单独的 root 密码的安全性，请考虑取消选中该复选框。您可能还需要考虑禁用自动登录，以防止人们轻松访问您的系统和数据。
+
+![image-20220323222740606](<../assets/Getting Started/create-user.png>)
 
 ### 检查安装设置
 
+仔细检查一切是否符合要求，安装过程没有回头路！您也可以进入各个选项进行包括软件包、防火墙、服务等的软件包及设置调整。
+
+![image-20220323222904438](<../assets/Getting Started/check-installation-information.png>)
+
 ### 开始安装
 
+现在执行实际安装。完成后，系统将重新启动并准备好使用。
+
+祝您在 openSUSE 玩得愉快！
+
+![image-20220323223039638](<../assets/Getting Started/start-installation.png>)
